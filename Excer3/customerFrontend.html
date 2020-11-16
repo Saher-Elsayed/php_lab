@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script src="formChecker.js"></script>
+    </head>
+    <h1>My Store</h1>
+    <body>
+        <form action="customerBackend.php" method="post" onsubmit="return validateForm(event)">
+            Username: <input name="username" type="text" ><br>
+            Password: <input name="password" type="text" ><br><br>
+
+            <br>
+            <h1><u>Iphone 1</u></h1> Cost = $1.00<br>
+            <img src="1.jfif"><br>
+            Quantity: <input type="number" name="item1" value="0"><br>
+            <br>
+            <h1>Iphone 2</h1><br>Cost: $2.00<br>
+            <img src="2.jfif"><br>
+            Quantity: <input type="number" name="item2" value="0"><br>
+            <br>
+            <u>Iphone 3</u><br>
+            iphone 3: $3.00<br>
+            <img src="3.jfif" ><br>
+            Quantity: <input type="number" name="item3" value="0"><br>
+
+            <br>
+
+            Shipping: <br>
+            <input type="radio" id="7Day" name="shipping" value="Free 7 Day">
+            <label for="7Day">Free 7 Day</label><br>
+
+            <input type="radio" id="Overnight" name="shipping" value="$50.00 Over Night">
+            <label for="Overnight">$50.00 Over Night</label><br>
+
+            <input type="radio" id="3Day" name="shipping" value="$5.00 3 Day">
+            <label for="3Day">$5.00 3 Day</label><br>
+
+            <input type="submit" value="Purchase"><br>
+        </form>
+        <button id="reset" onclick="clearPage()">Reset</button><br>
+    </body>
+</html>
